@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudia & Jairo - Um Novo Capítulo Começa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Celebre conosco este momento especial. Contribua para o início da nossa nova jornada através de presentes via PIX.">
+    <meta property="og:title" content="Claudia & Jairo - Casamento">
+    <meta property="og:description" content="Um novo capítulo começa. Celebre conosco!">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-rings">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+            </div>
+            <p class="loading-text">Preparando algo especial...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navigation" id="navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="monogram">[C&J]</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Início</a>
+                <a href="#our-story" class="nav-link">Nossa História</a>
+                <a href="#gift-section" class="nav-link">Presentes</a>
+                <a href="#celebration" class="nav-link">Celebração</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-elements">
+                <div class="floating-particle"></div>
+                <div class="floating-particle"></div>
+                <div class="floating-particle"></div>
+                <div class="floating-particle"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-delay="300">
+                <p class="hero-date">15/11 às 20h no pavilhão dos Coqueiros</p>
+                <h1 class="hero-title">
+                    <span class="title-line">Claudia</span>
+                    <span class="title-ampersand">&</span>
+                    <span class="title-line">Jairo</span>
+                </h1>
+                <p class="hero-subtitle">Um novo capítulo da nossa história começa</p>
+                <div class="hero-ornament">
+                    <svg viewBox="0 0 100 20" class="ornament-svg">
+                        <path d="M10 10 Q 25 0, 40 10 T 70 10 T 90 10" stroke="currentColor" fill="none" stroke-width="1"/>
+                        <circle cx="50" cy="10" r="2" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="600">
+                <button class="btn-primary hero-btn" onclick="scrollToSection('gift-section')">
+                    <span>Celebrar Conosco</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-countdown" data-aos="fade-up" data-aos-delay="900">
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Dias</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story" id="our-story">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-subtitle">A Jornada do Amor</p>
+                <h2 class="section-title">Nossa História</h2>
+            </div>
+            
+            <div class="story-content">
+                <div class="story-text" data-aos="fade-right">
+                    <p class="story-paragraph">
+                        Cada grande história de amor tem seu momento especial. A nossa começou 
+                        quando menos esperávamos e floresceu de uma forma única e mágica.
+                    </p>
+                    <p class="story-paragraph">
+                        Hoje, estamos prontos para escrever um novo capítulo juntos, e sua 
+                        presença torna este momento ainda mais especial.
+                    </p>
+                    <div class="story-signature">
+                        <p>Com todo nosso amor,</p>
+                        <p class="signature-names">Claudia & Jairo</p>
+                    </div>
+                </div>
+                
+                <div class="story-visual" data-aos="fade-left">
+                    <div class="story-image-placeholder">
+                        <div class="image-frame">
+                            <p>📸 Sua foto aqui</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Section -->
+    <section class="gift-section" id="gift-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-subtitle">Celebrar Juntos</p>
+                <h2 class="section-title">Sua Presença é o Maior Presente</h2>
+                <p class="section-description">
+                    Se você deseja contribuir para o início da nossa nova jornada, 
+                    ficamos profundamente gratos por qualquer gesto de carinho.
+                    <strong>O valor é opcional - você escolhe na hora do pagamento!</strong>
+                </p>
+            </div>
+
+            <div class="gift-container">
+                <!-- PIX Information - Sempre visível -->
+                <div class="pix-section" id="pixSection">
+                    <div class="pix-container" data-aos="fade-up">
+                        <div class="pix-header">
+                            <h3>Contribua via PIX</h3>
+                            <p class="pix-subtitle">Use as informações abaixo para fazer sua contribuição no valor que desejar</p>
+                        </div>
+
+                        <div class="pix-details">
+                            <div class="pix-info-card">
+                                <div class="info-header">
+                                    <span class="info-icon">
+                                        <img src="./svg/key.svg">
+                                    </span>
+                                    <h4>Chave PIX</h4>
+                                </div>
+                                <div class="info-content">
+                                    <span class="pix-key" id="pixKey">claudia.jairo@email.com</span>
+                                    <button class="copy-btn" data-copy="pixKey">
+                                        <svg viewBox="0 0 24 24" class="copy-icon">
+                                            <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z"/>
+                                        </svg>
+                                        <span>Copiar</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="pix-qr-section">
+                                <div class="qr-container" id="qrContainer">
+                                    <h4>QR Code PIX</h4>
+                                    <img src="qrcode.png" alt="QR Code PIX" class="qr-image" id="qrImage">
+                                    <div class="qr-instructions">
+                                        <p><strong>Como usar:</strong></p>
+                                        <ol>
+                                            <li>Abra o app do seu banco</li>
+                                            <li>Procure por "Pagar com PIX" ou "Ler QR Code"</li>
+                                            <li>Escaneie o código acima</li>
+                                            <li>Digite o valor que deseja contribuir</li>
+                                            <li>Confirme o pagamento</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pix-footer">
+                            <p class="pix-note">
+                                <strong>💝 Importante:</strong> O valor da contribuição é totalmente livre! 
+                                Você escolhe o valor na hora do pagamento. Nossa gratidão será eterna 
+                                independente do valor contribuído.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Celebration Section -->
+    <section class="celebration" id="celebration">
+        <div class="container">
+            <div class="celebration-content">
+                <div class="celebration-text" data-aos="fade-right">
+                    <h2 class="celebration-title">Nossa Gratidão</h2>
+                    <p class="celebration-description">
+                        Cada gesto de carinho, cada palavra de apoio e cada momento compartilhado 
+                        conosco torna esta jornada ainda mais especial. Vocês são parte fundamental 
+                        da nossa história de amor.
+                    </p>
+                </div>
+                
+                <div class="celebration-visual" data-aos="fade-left">
+                    <div class="gratitude-card">
+                        <div class="card-content">
+                            <p class="gratitude-quote">
+                                "O amor é a única força capaz de transformar 
+                                um inimigo em amigo."
+                            </p>
+                            <p class="quote-author">— Martin Luther King Jr.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>Feito com 💝 para celebrar nosso amor</p>
+                    <p class="footer-names">Claudia & Jairo • 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notifications -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

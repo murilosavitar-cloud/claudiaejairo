@@ -130,7 +130,7 @@ class WeddingWebsite {
                 button.style.background = '';
             }, 2000);
             
-            this.showNotification('Chave PIX copiada com sucesso!', 'success');
+            // this.showNotification('Chave PIX copiada com sucesso!', 'success');
             this.trackEvent('pix_key_copied');
             
         } catch (err) {

@@ -857,6 +857,11 @@ section {
   text-decoration: none;
 }
 
+.pix-key a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 .selected-amount {
   font-size: 28px;
   font-family: var(--font-heading);

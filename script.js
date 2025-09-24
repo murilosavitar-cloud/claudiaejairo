@@ -10,7 +10,7 @@ class WeddingWebsite {
     init() {
         // Configuration
         this.config = {
-            weddingDate: '2025-11-15T20:00:00' // 15/11 às 20h
+            weddingDate: '2025-11-15T19:00:00' // 15/11 às 19h
         };
 
         // Set up loading screen
@@ -33,14 +33,14 @@ class WeddingWebsite {
             // Simulate loading time
             setTimeout(() => {
                 loadingScreen.classList.add('hidden');
-                document.body.style.overflow = 'visible';
+                // document.body.style.overflow = 'visible';
             }, 2000);
 
             // Hide loading screen when page is fully loaded
             window.addEventListener('load', () => {
                 setTimeout(() => {
                     loadingScreen.classList.add('hidden');
-                    document.body.style.overflow = 'visible';
+                    // document.body.style.overflow = 'visible';
                 }, 1000);
             });
         }
